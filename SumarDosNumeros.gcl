@@ -1,0 +1,16 @@
+/* SumarDosNumeros
+ * Programa que suma dos números introducidos mediante la 
+ * entrada estándar, y muestra la impresión en pantalla.
+ */
+
+program SumarDosNumeros begin
+
+main 
+|[  var a, b, c : int
+  ; write("Introduce el primer número: ")
+  ; read(a)
+  ; write("Introduce el segundo número: ")
+  ; read(b)
+  ; c := a + b
+  ; writeln("La suma de los números es: ", c)
+]| end

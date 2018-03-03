@@ -1,0 +1,10 @@
+/**
+ * HolaMundo
+ * Programa que imprime en pantalla el mensaje "Hola Mundo".
+ */
+
+program HolaMundo begin
+main
+  |[ writeln("¡Hola, mundo!")
+  ]|
+end

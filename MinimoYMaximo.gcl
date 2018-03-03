@@ -1,0 +1,35 @@
+/**
+ * MinimoYMaximo
+ * Programa que, dados dos números enteros,
+ * halla cuál es el mínimo y cuál el máximo
+ * entre ellos dos.
+ */
+program MinimoYMaximo begin
+
+func minimo(n : int, m : int) -> int
+{pre true pre}
+{post (minimo <= n) /\ (minimo <= m) post}
+  |[ if m <= n -> m
+     [] m > n -> n
+     fi
+  ]|
+
+func maximo(n : int, m : int) -> int
+{pre true pre}
+{post (maximo >= n) /\ (maximo >= m) post}
+  |[ if m <= n -> n
+     [] m > n -> m
+     fi
+  ]|
+
+main
+  |[ var n, m : int 
+   ; write("Introduzca el valor de m: ")
+   ; read(m)
+   ; write("Introduzca el valor de n: ")
+   ; read(n)
+   ; writeln()
+   ; writeln("El valor mínimo entre los dos es: ", minimo(n, m))
+   ; writeln("El valor máximo entre los dos es: ", maximo(n, m))
+  ]|
+end

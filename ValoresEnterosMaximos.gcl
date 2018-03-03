@@ -1,0 +1,11 @@
+/* ValoresEnterosMaximos
+ * Programa que muestra en pantalla los enteros máximo
+ * y mínimo soportados por Graciela.
+ */
+
+program SumarDosNumeros begin
+
+main 
+|[  writeln("El entero máximo soportado por Graciela es: ", MAX_INT)
+  ; writeln("El entero mínimo soportado por Graciela es: ", MIN_INT)
+]| end
